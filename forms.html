@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML forms</title>
+</head>
+
+<body>
+<h1 style="text-align:center;background-color:orange"><u>HTML FORMS</u></h1>
+<h2><u>fieldset,legend</u></h2>
+<form action="index.html">
+  <fieldset>
+    <legend>Personal:</legend>
+    <label >First name:</label><br>
+    <input type="text" id="fname"  value=""><br>
+    <label >Last name:</label><br>
+    <input type="text" id="lname" value=""><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+<hr>
+</form>
+  <h2><u>Radio Buttons</u></h2>
+  <p>Choose your favorite Web language:</p>
+  <form action="index.html" target="_self" method="get">
+      <input type="radio" id="html" name="fav_language">
+      <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="fav_language">
+      <label for="css">CSS</label><br>
+      <input type="radio" id="JavaScript" name="fav_language">
+      <label for="JavaScript">JavaScript</label>
+  </form>
+<hr />
+  <h2><u>checkbox</u></h2>
+  <form action="index.html" target="_parent" autocomplete="on">
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label>
+  </form>
+<hr>
+  <form class="" action="index.html" method="post">
+    <h2><u>select option</u></h2>
+    <label for="cars">Choose a car:</label>
+<select id="cars" name="cars" size="4" multiple>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select><br><br>
+<input type="submit">
+  <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+  </form>
+<hr>
+<form class="" action="index.html" method="post">
+  <h2><u>Message</u></h2>
+  <textarea name="message" rows="10" cols="30" placeholder="enter your message here">
+</textarea>
+</form>
+<hr>
+<form class="" action="index.html" method="post">
+  <h2><u>Button</u></h2>
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+</form>
+<hr>
+<h2>The datalist</h2>
+
+<p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+<form action="index.html">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+<hr>
+<h2><u>output </u></h2>
+<form action="index.html" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" value="">
+  100 &nbsp + &nbsp
+  <input type="number" id="b" value="">
+    &nbsp = &nbsp
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+<hr>
+<form class="" action="index.html" method="post">
+  <h2><u>input</u></h2>
+  <h3>colour</h3><label>to pick colour</label>
+<input type="color">
+<h3>date</h3>
+<input type="date" max="2021-08-29" min="2000-01-01">
+<label >to enter in local time:</label>
+<input type="datetime-local">
+<label>month & year</label><input type="month">
+<label>week & year</label><input type="week">
+<h3>email</h3><label> the e-mail address can be automatically validated when submitted.</label>
+<input type="email">
+<h3>file</h3>
+<input type="file">
+<h3>hidden</h3><label>data cannot be seen or modified by users when a form is submitted</label>
+<input type="hidden">
+<h3>image</h3>
+<input type="image">
+<h3>number</h3>
+<input type="number">
+<h3>password:</h3>
+<input type="password" maxlenth="20"><label>input will not be visible</label>
+<h3>reset</h3>
+<input type="reset">
+<h3>search</h3>
+<input type="search">
+<h3>submit</h3>
+<input type="submit">
+<h3>phone no.</h3>
+<input type="tel">
+<h3>text</h3>
+<input type="text">
+<h3>time</h3>
+<input type="time">
+<h3>url</h3>
+<input type="url">
+</form>
+
+</body>
+</html>
